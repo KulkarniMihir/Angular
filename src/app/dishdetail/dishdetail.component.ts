@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { Dish } from "../shared/dish";
 import { DISHES } from '../shared/dishes';
 
@@ -12,10 +12,12 @@ import { DISHES } from '../shared/dishes';
 
 export class DishdetailComponent implements OnInit {
 
- // dish: Dish;
- dishes: Dish[] = DISHES;
 
- dish: Dish = DISHES[0];
+  @Input()
+  dish: Dish;
+ //dishes: Dish[] = DISHES;
+
+ //dish: Dish = DISHES[0];
 
   constructor() { }
 
