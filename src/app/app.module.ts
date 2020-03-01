@@ -19,6 +19,7 @@ import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 import {MatSliderModule} from '@angular/material/slider';
 import { HttpClientModule } from '@angular/common/http'; 
+
 import 'hammerjs';
 import { MenuComponent } from './menu/menu.component';
 import { DishdetailComponent } from './dishdetail/dishdetail.component';
@@ -75,7 +76,7 @@ import { HighlightDirective } from './directives/highlight.directive';
     MatProgressSpinnerModule,
     MatSliderModule,
     HttpClientModule,
-    
+
   ],
   providers: [
       DishService,
